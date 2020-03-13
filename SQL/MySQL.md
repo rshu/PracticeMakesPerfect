@@ -1,0 +1,53 @@
+#### limit N
+
+**N** is any number starting from 0, putting 0 as the limit does not return any records in the query.  Putting a number say 5 will return five records.
+
+If the records in the specified table are less than N, then all the records from the queried table are returned in the result set.
+
+e.g.,
+
+```mysql
+SELECT *  FROM members LIMIT 5;
+```
+
+Using ***offset*** in the LIMIT query
+
+The OFF SET value allows us to specify which row to start from retrieving data
+
+```mysql
+SELECT * FROM members LIMIT 1, 2;
+### offset = 1, i.e., start from 2
+### limit = 2
+```
+
+The script shown above gets data starting the second row and limits the results to 2.
+
+---
+
+#### in() function
+
+The function returns 1 if expression is equal to any of the values in the IN list, otherwise, returns 0.
+
+```mysql
+SELECT 
+    column1,column2,...
+FROM
+    table_name
+WHERE 
+    (expr|column_1) IN ('value1','value2',...);
+```
+
+
+
+```mysql
+mysql> SELECT 10 IN(15,10,25);
++-----------------+
+| 10 IN(15,10,25) |
++-----------------+
+|               1 | 
++-----------------+
+1 row in set (0.00 sec)
+```
+
+
+
