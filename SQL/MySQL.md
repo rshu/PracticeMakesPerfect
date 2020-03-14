@@ -49,5 +49,41 @@ mysql> SELECT 10 IN(15,10,25);
 1 row in set (0.00 sec)
 ```
 
+---
 
+#### IF(*condition*, *value_if_true*, *value_if_false*)
+
+```mysql
+SELECT IF(500<1000, 5, 10);
+```
+
+
+
+---
+
+#### ROUND(*number*, *decimals*)
+
+Parameters:
+
+*number*:  Required. The number to be rounded
+
+*decimals*: Optional. The number of decimal places to round *number* to. If omitted, it returns the integer (no decimals)
+
+```mysql
+SELECT ROUND(135.375, 2); // 135.38
+```
+
+---
+
+#### COUNT(*expression*)
+
+Parameters:
+
+*expression*: Required. A field or a string value
+
+```mysql
+SELECT COUNT(ProductID) AS NumberOfProducts FROM Products; // 77
+```
+
+---
 
