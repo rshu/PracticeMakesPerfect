@@ -19,11 +19,32 @@ This method does not return any value;
 e.g., 
 
 ```java
-Arrays.sort(arr); // ascending order
+Arrays.sort(arr); // default, ascending order
 Arrays.sort(arr, 1, 5) // sort subarray from arr[1] to arr[4]
 Arrays.sort(arr, Collections.reverseOrder()) // decending order
-  
+
+// b a
 Arrays.sort(arr, (a,b)-> b - a); // customized comparator, reverse order
 ```
 
 -----
+
+
+
+```java
+public void customSorting() {
+    final List<Integer> numbers = Arrays.asList(4,7,1,6,3,5,4);
+    final List<Integer> expected = Arrays.asList(7,6,5,4,4,3,1);
+    
+    Collections.sort(numbers, new ReverseNumberOrder());
+    assertEquals(expected, numbers);
+}
+
+public class ReverseNumberOrder implements Comparator<Integer> {
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2 - o1;
+    }
+}
+```
+
