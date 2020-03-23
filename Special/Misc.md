@@ -1,0 +1,1 @@
+![](/home/rshu/Documents/PracticeMakesPerfect/figures/big_O.jpeg)

@@ -1,3 +1,7 @@
+
+
+
+
 #### Iterate map.keySet()
 
 
@@ -8,4 +12,16 @@ for (Map.Entry<Character, Integer> entry : map.entrySet()) {
     int value = map.getValue();
 }
 ```
+
+
+
+#### TreeMap
+
+
+
+#### LinkedHashMap
+
+keep the order of insert and traverse
+
+#### ConcurrentHashMap
 

@@ -1,3 +1,14 @@
+```java
+// Array definition
+final int[] integers = new int[3];
+final boolean[] bools = {false, true, true, false};
+final String[] strings = new String[]{"one", "two"};
+```
+
+
+
+
+
 #### public static void sort(int[] arr, int from_Index, int to_Index)
 
 

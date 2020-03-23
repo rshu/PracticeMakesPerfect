@@ -1,10 +1,19 @@
-
+#### HashSet
 
 ```java
-Set<String> set = new HashSet<>();\
+// Initialization
+Set<String> set = new HashSet<>();
 
 set.add("example");
 ```
+
+
+
+#### TreeSet
+
+
+
+#### LinkedHashSet
 
 
 
