@@ -10,3 +10,16 @@ Convert Integer to String
 Integer.toString(1);
 ```
 
+
+
+
+
+### Character
+
+```java
+Character.isLetterOrDigit()
+Character.toLowerCase()
+Character.isLetter()
+
+```
+

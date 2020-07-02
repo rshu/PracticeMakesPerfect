@@ -8,8 +8,8 @@
 
 ```java
 for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-    char key = map.getKey();
-    int value = map.getValue();
+    char key = entry.getKey();
+    int value = entry.getValue();
 }
 ```
 
