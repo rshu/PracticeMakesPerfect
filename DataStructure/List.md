@@ -43,3 +43,10 @@ public ListNode reverseList(ListNode head) {
 
 
 
+#### convert list to array
+
+```java
+List<Integer> list = new ArrayList<>();
+list.toArray(new int[4]);
+```
+

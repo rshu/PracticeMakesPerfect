@@ -119,7 +119,7 @@ class Solution {
 
 
 
-#### Quick Sort
+#### Quick Sort (sort in partition)
 
 template
 
@@ -154,7 +154,7 @@ public static List<Integer> quickSort(List<Integer> numbers) {
 
 
 
-Leetcode 215. Kth Largest Elemetn in an Array
+Leetcode 215. Kth Largest Element in an Array
 
 ```java
 class Solution {
@@ -211,7 +211,7 @@ class Solution {
 
 
 
-#### Merge Sort
+#### Merge Sort (sort in merge)
 
 template:
 
