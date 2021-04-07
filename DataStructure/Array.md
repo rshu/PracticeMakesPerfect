@@ -36,7 +36,25 @@ Arrays.sort(arr, Collections.reverseOrder()) // decending order
 Arrays.sort(arr, (a,b)-> b - a); // customized comparator, reverse order
 ```
 
------
+```java
+# sort a two dimension array
+    
+    // first element decreasing, second element increasing
+	Arrays.sort(people, (new Comparator<int[]>() {
+        @Override
+        public int compare(int[] o1, int[] o2) {
+            if (o1[0] == o2[0]) {
+                return o1[1] - o2[1];
+            } else {
+                return o2[0] - o1[0];
+            }
+        }
+    }));
+```
+
+
+
+
 
 
 
