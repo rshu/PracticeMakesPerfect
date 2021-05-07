@@ -54,10 +54,6 @@ Arrays.sort(arr, (a,b)-> b - a); // customized comparator, reverse order
 
 
 
-
-
-
-
 ```java
 public void customSorting() {
     final List<Integer> numbers = Arrays.asList(4,7,1,6,3,5,4);
