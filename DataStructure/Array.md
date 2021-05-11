@@ -34,6 +34,8 @@ Arrays.sort(arr, Collections.reverseOrder()) // decending order
 
 // b a
 Arrays.sort(arr, (a,b)-> b - a); // customized comparator, reverse order
+
+arr should be type Integer instead of int
 ```
 
 ```java
