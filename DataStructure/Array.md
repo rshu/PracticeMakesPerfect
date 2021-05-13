@@ -94,3 +94,8 @@ Arrays.sort(people, (new Comparator<int[]>() {
 
 
 
+```java
+// return the largest element of array arr
+return Arrays.stream(arr).max().getAsInt();
+```
+
