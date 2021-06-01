@@ -6,3 +6,8 @@ PriorityQueue<int[]> pq = new PriorityQueue<>(
             );
 ```
 
+java default:
+
+### Min Priority Queue
+
+the least or smallest element at the head of the queue
