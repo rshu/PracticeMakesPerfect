@@ -50,3 +50,8 @@ List<Integer> list = new ArrayList<>();
 list.toArray(new int[4]);
 ```
 
+```java
+List<String> res = new ArrayList<>();
+return res.toArray(new String[res.size()]);
+```
+

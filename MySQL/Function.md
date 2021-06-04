@@ -73,7 +73,7 @@ Parameters:
 SELECT ROUND(135.375, 2); // 135.38
 ```
 
----
+
 
 #### COUNT(*expression*)
 
@@ -85,5 +85,28 @@ Parameters:
 SELECT COUNT(ProductID) AS NumberOfProducts FROM Products; // 77
 ```
 
+
+
 ---
+
+##### dense_rank()
+
+```mysql
+1875.
+# Write your MySQL query statement below
+
+select e1.employee_id, e1.name, e1.salary, e2.team_id
+from Employees as e1
+inner join (
+select salary, dense_rank() over (
+    order by salary
+) as team_id
+from Employees
+group by salary
+having count(distinct employee_id) > 1
+# {"headers": ["salary", "team_id"], "values": [[3000, 1], [7400, 2]]}
+) as e2
+on e1.salary = e2.salary
+order by e2.team_id, e1.employee_id
+```
 
