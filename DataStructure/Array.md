@@ -90,7 +90,26 @@ Arrays.sort(people, (new Comparator<int[]>() {
         }
     }
 }));
+
+这种写法下面的testcase会出错
+[[-2147483646,-2147483645],[2147483646,2147483647]] 
+comparator里再也不直接返回两个数相减了
 ```
+
+
+
+```java
+Arrays.sort(points,new Comparator<int[]>(){
+            public int compare(int[] p1,int[] p2){
+                return p1[1] < p2[1] ? -1:1;
+            }
+        });
+
+
+Arrays.sort(points, (p1, p2) -> p1[1] < p2[1] ? -1 : 1);
+```
+
+
 
 
 
