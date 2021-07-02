@@ -55,3 +55,23 @@ List<String> res = new ArrayList<>();
 return res.toArray(new String[res.size()]);
 ```
 
+
+
+#### sort List
+
+```java
+List<String> dictionary;
+
+		// 长度不同较长的字符串在前面
+        // 相同长度字符串，按照字母顺序排列
+        dictionary.sort(
+           (w1, w2) -> {
+               if (w1.length() != w2.length()) {
+                   return w2.length() - w1.length();
+               } else {
+                   return w1.compareTo(w2);
+               }
+           }
+       );
+```
+
